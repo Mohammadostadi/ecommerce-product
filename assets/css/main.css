@@ -93,6 +93,14 @@ a{
     z-index: -1;
 }
 
+.max-w-input-80{
+    max-width: 80px;
+}
+
+
+.btn:hover{
+    border-style: none !important;
+}
 
 .active-item{
     opacity: .55;
