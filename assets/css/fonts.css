@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'KumbhSans-normal';
+    src: url(/public/fonts/KumbhSans-VariableFont_YOPQ\,wght.ttf);
+    font-weight: 400;
+}
+
+
+
+@font-face {
+    font-family: 'KumbhSans-bold';
+    src: url(/public/fonts/KumbhSans-VariableFont_YOPQ\,wght.ttf);
+    font-weight: 700;
+}

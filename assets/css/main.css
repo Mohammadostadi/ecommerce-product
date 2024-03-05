@@ -1,0 +1,171 @@
+@import url("fonts.css");
+
+
+:root{
+    --clr-orange: hsl(26, 100%, 55%);
+    --clr-pale-orange:  hsl(25, 100%, 94%);
+    --clr-dark-grayish-blue: hsl(219, 9%, 45%);
+    --clr-light-grayish-blue: hsl(223, 64%, 98%);
+    --clr-white: hsl(0, 0%, 100%);
+    --clr-dark: hsl(0, 0%, 0%);
+    --clr-grayish-blue: hsl(220, 14%, 75%);
+}
+
+.color-orange{
+    color: var(--clr-orange);
+}
+
+.bg-color-orange{
+    background-color: var(--clr-orange);
+}
+
+.bg-color-pale-orange{
+    background-color: var(--clr-pale-orange);
+}
+
+.color-dark-grayish-blue{
+    color: var(--clr-dark-grayish-blue);
+}
+
+.bg-color-light-grayish-blue{
+    background-color: var(--clr-light-grayish-blue);
+}
+
+.color-white{
+    color: var(--clr-white);
+}
+
+
+.font-bold{
+    font-family: 'kumbhSans-bold';
+}
+.container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+
+
+body{
+    font-family: 'KumbhSans-normal';
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.image-css{
+    aspect-ratio: 1 !important;
+    object-fit: cover !important;
+}
+
+
+
+.box-info {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+.box-info .info-sneakers-company {
+    max-width: 500px;
+}
+
+.after-value-off{
+    position: relative;
+}
+
+.after-value-off::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: var(--clr-grayish-blue);
+    bottom: 7px;
+    z-index: -1;
+}
+
+
+.active-item{
+    opacity: .55;
+    border: 3px solid;
+    border-color: var(--clr-orange);
+}
+.img-hover-opacity:hover{
+    opacity: .5;
+    transition: all 1s;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.after-line-menu{
+    position: relative;
+}
+.after-line-menu::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: var(--clr-grayish-blue);
+    bottom: 0;
+    z-index: -1;
+}
+
+@media(max-width:576px){
+    .navbar-nav{
+        display: contents !important;
+    }
+    .mobile-padding{
+        padding: 1rem;
+    }
+}
+.svg-hover-dark svg path:hover{
+    fill: #000 !important;
+    transition: all .5s;
+}
+
+.img-hover-avatar img:hover{
+    border: 3px solid;
+    border-color: var(--clr-orange);
+    transition: all .1s;
+}
+
+
+
+@media(max-width:992px){
+    .w-none-mobile img{
+        width: 0;
+        height: 0;
+    }
+}
+
+@media (min-width: 768px){
+
+    .mobile-menu-display-0{
+        width: 0 !important;
+        height: 0 !important;
+        overflow: hidden;
+    }
+    
+}
+
+
+@media(max-width:768px){
+    .w-none-mobile{
+        width: 0;
+        height: 0;
+        display: none;
+    }
+    .mobile-menu-display-0{
+        width: 100%;
+        
+    }
+}
