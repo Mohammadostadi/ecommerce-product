@@ -25,3 +25,26 @@ function myFunction() {
         x.style.display = "block";
     }
 }
+var show = true;
+var PopUp = document.getElementById('pop-up');
+var popUps = document.getElementById('pop-ups');
+
+
+
+function showPopUp(name){
+    if (show){
+        show = false;
+        popUps.classList.add("show")
+        if(name == 'user'){
+            PopUp.classList.add('show-pop-up')
+        }
+    }else{
+        show = true; 
+        popUps.classList.remove("show")
+    }
+}
+
+function closePopUp(){
+    show = true
+    popUps.classList.remove("show")
+}
