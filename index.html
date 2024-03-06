@@ -10,6 +10,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
   <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
   
   <title>Frontend Mentor | E-commerce product page</title>
 
@@ -20,8 +22,8 @@
   </style>
 </head>
 <body>
-
-
+  
+  
   <header class="header container after-line-menu g-0">
     <div class="d-flex justify-content-between">
       <div class="mobile-padding">
@@ -73,7 +75,7 @@
             </li>
             <li class="nav-item w-none-mobile">
               <a href="" class="nav-link">
-                  Women
+                Women
               </a>
             </li>
             <li class="nav-item w-none-mobile">
@@ -99,14 +101,14 @@
       </div>
     </div>
   </header>
-
   
   
   
   
   
   
-
+  
+  
   <section class="sec-info container">
     <div class="row">
       <div class="col-lg-6">
@@ -122,47 +124,47 @@
       </div>
       <div class="col-lg-6 box-info">
         <div class="info-sneakers-company my-4">
-            <span class="color-orange font-bold">
-              SNEAKER COMPANY
-            </span>
-            <h1 class="font-bold">
-              Fall Limited Edition Sneakers
-            </h1>
-            <p class="color-dark-grayish-blue">
-              These low-profile sneakers are your perfect casual wear companion. Featuring a 
-              durable rubber outer sole, they’ll withstand everything the weather can offer.
-            </p>
-
-            <div class="row">
-              <div class="col-lg-12 col-sm-8 col-8">
-                <p class="font-bold h2">
-                  $125.00
-                  <span class="h5 color-orange bg-color-pale-orange p-1 rounded">
-                    50%
-                  </span>
-                </p>
-              </div>
-              <div class="col-lg-12 col-sm-4 col-4">
-                <span class="color-dark-grayish-blue after-value-off">
-                  $250.00
+          <span class="color-orange font-bold">
+            SNEAKER COMPANY
+          </span>
+          <h1 class="font-bold">
+            Fall Limited Edition Sneakers
+          </h1>
+          <p class="color-dark-grayish-blue">
+            These low-profile sneakers are your perfect casual wear companion. Featuring a 
+            durable rubber outer sole, they’ll withstand everything the weather can offer.
+          </p>
+          
+          <div class="row">
+            <div class="col-lg-12 col-sm-8 col-8">
+              <p class="font-bold h2">
+                $125.00
+                <span class="h5 color-orange bg-color-pale-orange p-1 rounded">
+                  50%
                 </span>
-              </div>
+              </p>
             </div>
-            
-            <div class="my-5 d-flex justify-content-around">
-              <div class="bg-color-light-grayish-blue rounded px-5 py-3 d-flex">
-                <button class="btn" id="minus"><svg width="12" height="4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path d="M11.357 3.332A.641.641 0 0 0 12 2.69V.643A.641.641 0 0 0 11.357 0H.643A.641.641 0 0 0 0 .643v2.046c0 .357.287.643.643.643h10.714Z" id="a"/></defs><use fill="#FF7E1B" fill-rule="nonzero" xlink:href="#a"/></svg></button>
-                <input class="bg-color-light-grayish-blue text-center border-0 max-w-input-80"  value="0" id="input"/>
-                <button class="btn" id="plus"><svg width="12" height="12" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path d="M12 7.023V4.977a.641.641 0 0 0-.643-.643h-3.69V.643A.641.641 0 0 0 7.022 0H4.977a.641.641 0 0 0-.643.643v3.69H.643A.641.641 0 0 0 0 4.978v2.046c0 .356.287.643.643.643h3.69v3.691c0 .356.288.643.644.643h2.046a.641.641 0 0 0 .643-.643v-3.69h3.691A.641.641 0 0 0 12 7.022Z" id="b"/></defs><use fill="#FF7E1B" fill-rule="nonzero" xlink:href="#b"/></svg></button>
-                <!-- <span class="px-5">0</span> -->
-                  
-              </div>
-              <!-- <span class="bg-color-light-grayish-blue rounded px-5 py-3">
-                <svg width="12" height="4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path d="M11.357 3.332A.641.641 0 0 0 12 2.69V.643A.641.641 0 0 0 11.357 0H.643A.641.641 0 0 0 0 .643v2.046c0 .357.287.643.643.643h10.714Z" id="a"/></defs><use fill="#FF7E1B" fill-rule="nonzero" xlink:href="#a"/></svg>
-                0
-                <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path d="M12 7.023V4.977a.641.641 0 0 0-.643-.643h-3.69V.643A.641.641 0 0 0 7.022 0H4.977a.641.641 0 0 0-.643.643v3.69H.643A.641.641 0 0 0 0 4.978v2.046c0 .356.287.643.643.643h3.69v3.691c0 .356.288.643.644.643h2.046a.641.641 0 0 0 .643-.643v-3.69h3.691A.641.641 0 0 0 12 7.022Z" id="b"/></defs><use fill="#FF7E1B" fill-rule="nonzero" xlink:href="#b"/></svg>
-              </span> -->
-              <a id="success" href="#" class="bg-color-orange color-white font-bold rounded px-5 py-3 img-hover-opacity">
+            <div class="col-lg-12 col-sm-4 col-4">
+              <span class="color-dark-grayish-blue after-value-off">
+                $250.00
+              </span>
+            </div>
+          </div>
+          
+          <div class="my-5 row">
+            <div class="bg-color-light-grayish-blue rounded px-3 py-1 col-lg-6 col-md-6 col-6 d-flex justify-content-center">
+              <button class="btn" id="minus"><svg width="12" height="4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path d="M11.357 3.332A.641.641 0 0 0 12 2.69V.643A.641.641 0 0 0 11.357 0H.643A.641.641 0 0 0 0 .643v2.046c0 .357.287.643.643.643h10.714Z" id="a"/></defs><use fill="#FF7E1B" fill-rule="nonzero" xlink:href="#a"/></svg></button>
+              <input class="bg-color-light-grayish-blue text-center border-0 max-w-input-80"  value="0" id="input"/>
+              <button class="btn" id="plus"><svg width="12" height="12" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path d="M12 7.023V4.977a.641.641 0 0 0-.643-.643h-3.69V.643A.641.641 0 0 0 7.022 0H4.977a.641.641 0 0 0-.643.643v3.69H.643A.641.641 0 0 0 0 4.978v2.046c0 .356.287.643.643.643h3.69v3.691c0 .356.288.643.644.643h2.046a.641.641 0 0 0 .643-.643v-3.69h3.691A.641.641 0 0 0 12 7.022Z" id="b"/></defs><use fill="#FF7E1B" fill-rule="nonzero" xlink:href="#b"/></svg></button>
+              <!-- <span class="px-5">0</span> -->
+            </div>
+            <!-- <span class="bg-color-light-grayish-blue rounded px-5 py-3">
+              <svg width="12" height="4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path d="M11.357 3.332A.641.641 0 0 0 12 2.69V.643A.641.641 0 0 0 11.357 0H.643A.641.641 0 0 0 0 .643v2.046c0 .357.287.643.643.643h10.714Z" id="a"/></defs><use fill="#FF7E1B" fill-rule="nonzero" xlink:href="#a"/></svg>
+              0
+              <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path d="M12 7.023V4.977a.641.641 0 0 0-.643-.643h-3.69V.643A.641.641 0 0 0 7.022 0H4.977a.641.641 0 0 0-.643.643v3.69H.643A.641.641 0 0 0 0 4.978v2.046c0 .356.287.643.643.643h3.69v3.691c0 .356.288.643.644.643h2.046a.641.641 0 0 0 .643-.643v-3.69h3.691A.641.641 0 0 0 12 7.022Z" id="b"/></defs><use fill="#FF7E1B" fill-rule="nonzero" xlink:href="#b"/></svg>
+            </span> -->
+            <div class=" col-lg-6 col-md-6 d-flex col-6">
+              <a id="success" href="#" class="bg-color-orange color-white font-bold rounded px-3 py-2 img-hover-opacity">
                 <svg width="22" height="20" xmlns="http://www.w3.org/2000/svg"><path d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z" fill="#fff" fill-rule="nonzero"/></svg>
                 <span class="px-2">Add to cart</span>
               </a>
@@ -171,11 +173,16 @@
         </div>
     </div>
   </section>
+
+
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="assets/js/main.js"></script>
   <script>
     $(document).ready(function() {
-			toastr.options = {
-				'closeButton': true,
+      toastr.options = {
+        'closeButton': true,
 				'debug': false,
 				'newestOnTop': false,
 				'progressBar': false,
@@ -191,8 +198,8 @@
 				'hideMethod': 'fadeOut',
 			}
 		});
-
-	// Toast Type
+    
+    // Toast Type
 		$('#success').click(function(event) {
 			toastr.success('Add Successfully');
 		});
