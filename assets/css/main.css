@@ -191,10 +191,22 @@ a{
     display: none;
 }
 
+.non-active-image{
+    height: 0;
+    width: 0 !important;
+}
+
+
 @media(max-width:992px){
     .w-none-mobile img{
         width: 0;
         height: 0;
+        overflow: hidden;
+    }
+
+    .w-none-mobile{
+        overflow: hidden;
+        display: none !important;
     }
 }
 

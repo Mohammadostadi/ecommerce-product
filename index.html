@@ -113,13 +113,16 @@
     <div class="row">
       <div class="col-lg-6">
         <div class="my-3 text-center">
-          <img width="650px" height="453px" class=" w-100 image-css rounded" src="public/images/image-product-1.jpg" alt="">
+          <img width="650px" height="453px" class=" w-100 image-css rounded active-image" id="image-product-1" src="public/images/image-product-1.jpg" alt="">
+          <img width="650px" height="453px" class=" w-100 image-css rounded non-active-image" id="image-product-2" src="public/images/image-product-2.jpg" alt="">
+          <img width="650px" height="453px" class=" w-100 image-css rounded non-active-image" id="image-product-3" src="public/images/image-product-3.jpg" alt="">
+          <img width="650px" height="453px" class=" w-100 image-css rounded non-active-image" id="image-product-4" src="public/images/image-product-4.jpg" alt="">
         </div>
         <div class="d-flex justify-content-around w-none-mobile">
-          <img width="90px" height="90px" class="image-css rounded active-item" src="public/images/image-product-1-thumbnail.jpg" alt="">
-          <img width="90px" height="90px" class="image-css rounded img-hover-opacity" src="public/images/image-product-2-thumbnail.jpg" alt="">
-          <img width="90px" height="90px" class="image-css rounded img-hover-opacity" src="public/images/image-product-3-thumbnail.jpg" alt="">
-          <img width="90px" height="90px" class="image-css rounded img-hover-opacity" src="public/images/image-product-4-thumbnail.jpg" alt="">
+          <img width="90px" height="90px" class="image-css rounded img-hover-opacity active-item" id="image-product-1-thumbnail" src="public/images/image-product-1-thumbnail.jpg" alt="" onclick="showImageProduct1()">
+          <img width="90px" height="90px" class="image-css rounded img-hover-opacity" id="image-product-2-thumbnail" src="public/images/image-product-2-thumbnail.jpg" alt="" onclick="showImageProduct2()">
+          <img width="90px" height="90px" class="image-css rounded img-hover-opacity" id="image-product-3-thumbnail" src="public/images/image-product-3-thumbnail.jpg" alt="" onclick="showImageProduct3()">
+          <img width="90px" height="90px" class="image-css rounded img-hover-opacity" id="image-product-4-thumbnail" src="public/images/image-product-4-thumbnail.jpg" alt="" onclick="showImageProduct4()">
         </div>
       </div>
       <div class="col-lg-6 box-info">
@@ -173,12 +176,8 @@
         </div>
     </div>
   </section>
-
-
-
-  
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="assets/js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script>
     $(document).ready(function() {
       toastr.options = {
