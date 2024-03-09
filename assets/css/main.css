@@ -248,14 +248,13 @@ a{
     }
 }
 
-@media (min-width: 768px){
+@media (min-width: 769px){
 
     .mobile-menu-display-0{
         width: 0 !important;
         height: 0 !important;
         overflow: hidden;
     }
-    
 }
 
 
@@ -272,5 +271,10 @@ a{
     .w-none-mobile-li{
         overflow: hidden;
         display: none !important;
+    }
+}
+@media(max-width: 340px){
+    .mobile-padding{
+        padding: .4rem;
     }
 }
